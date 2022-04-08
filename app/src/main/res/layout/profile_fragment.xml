@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkGrey"
+    android:paddingHorizontal="10dp">
+
+    <TextView
+        android:id="@+id/myAccount_profile_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="1dp"
+        android:text="@string/prompt_profile_fragment"
+        android:textColor="@color/colorWhitePure"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_manageProfileMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myAccount_profile_fragment"
+        android:paddingHorizontal="10dp"
+        android:text="@string/prompt_profile_fragment2"
+        android:textColor="@color/colorWhitePure"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="146dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorViolet1"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_profile_fragment3"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ghostpic"
+                android:contentDescription="@string/generalImageDesc" />
+
+            <ProgressBar
+                android:id="@+id/PB_profile_imageUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_username"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/ET_profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_email"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/ET_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_password"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/ET_profile_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwordToConfirm"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/Btn_profile_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorViolet3"
+            android:paddingHorizontal="5dp"
+            android:text="Save changes"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

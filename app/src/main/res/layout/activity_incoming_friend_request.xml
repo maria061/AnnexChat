@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:orientation="vertical"
+    tools:context=".IncomingFriendRequestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:background="@color/colorVeryDarkGray1"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/acceptFriendRequest"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorVeryDarkGray1">
+
+            <Button
+                android:id="@+id/btnRejectFrReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorDarkGrey"
+                android:text="@string/Reject"
+                android:textColor="@color/colorWhitePure"
+                android:textSize="17sp"
+                android:onClick="rejectFriendRequest"/>
+
+            <Button
+                android:id="@+id/btnAcceptFrReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorDarkGrey"
+                android:text="@string/Accept"
+                android:textColor="@color/colorWhitePure"
+                android:textSize="17sp"
+                android:onClick="acceptFriendRequest"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

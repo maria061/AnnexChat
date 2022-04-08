@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".RegisterActivity"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/annex"
+        tools:layout_editor_absoluteX="10dp"
+        android:contentDescription="@string/annexDescription"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:background="@drawable/smallbackg"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <TextView
+            android:id="@+id/reg_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/reg_creatAcc"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ET_reg_email"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.232"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <EditText
+            android:id="@+id/ET_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="68dp"
+            android:hint="@string/reg_username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/colorWhitePure"
+            android:textColorHint="@color/colorWhitePure"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/reg_textView"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <EditText
+            android:id="@+id/ET_reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:hint="@string/prompt_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorWhitePure"
+            android:textColorHint="@color/colorWhitePure"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_username"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/ET_reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:hint="@string/prompt_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhitePure"
+            android:textColorHint="@color/colorWhitePure"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_email"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/ET_reg_passwordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:hint="@string/repeatPass"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhitePure"
+            android:textColorHint="@color/colorWhitePure"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_password"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_reg_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/colorWhitePure"
+            app:layout_constraintBottom_toTopOf="@+id/Btn_reg_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_passwordRepeat"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/Btn_reg_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorViolet1"
+            android:text="@string/reg_RegisterBtn"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_passwordRepeat"
+            app:layout_constraintVertical_bias="0.841"
+            tools:layout_editor_absoluteX="16dp"
+            android:onClick="register"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

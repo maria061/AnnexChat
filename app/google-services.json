@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "636285878817",
+    "firebase_url": "https://annexchat.firebaseio.com",
+    "project_id": "annexchat",
+    "storage_bucket": "annexchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636285878817:android:cbaac3e3b8d576eb6b1960",
+        "android_client_info": {
+          "package_name": "com.example.chat2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636285878817-5mvdrtag5nvqhdpg5e2b6h6pnrohddnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chat2",
+            "certificate_hash": "558074dd482ced1554b41d08899369afd49bb9ae"
+          }
+        },
+        {
+          "client_id": "636285878817-4o2a1n2k5go69alq8f4fhlidn26v3p9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmSxxAUI8dqyCjgjVKdrlU4w2WVGAhPzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636285878817-4o2a1n2k5go69alq8f4fhlidn26v3p9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

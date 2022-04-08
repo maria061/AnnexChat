@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/ic_profile_white_24dp"
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/navigation_friends"
+            android:icon="@drawable/ic_friends_white_24dp"
+            android:title="@string/nav_friends" />
+        <item
+            android:id="@+id/navigation_settings"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:title="@string/nav_settings" />
+        <item
+            android:id="@+id/navigation_movies"
+            android:icon="@drawable/ic_movie_white_24dp"
+            android:title="@string/nav_movies" />
+
+        <item
+            android:id="@+id/navigation_incomingRequests"
+            android:icon="@drawable/ic_input_white_24dp"
+            android:title="@string/nav_incoming" />
+
+        <item
+            android:id="@+id/navigation_favFriends"
+            android:icon="@drawable/ic_friends_white_24dp"
+            android:title="@string/nav_favourite_friends" />
+
+        <item
+            android:id="@+id/navigation_messagesRep"
+            android:title="@string/MessReport" />
+
+        <item
+            android:id="@+id/navigation_friendsRep"
+            android:title="@string/friendsReport" />
+
+
+    </group>
+
+</menu>

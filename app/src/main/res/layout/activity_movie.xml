@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkGrey"
+    android:orientation="vertical"
+    tools:context=".MovieActivity">
+
+    <TextView
+        android:id="@+id/tvTitle_movieAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/colorVeryDarkGray1"
+        android:padding="7dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhitePure"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp">
+
+        <TextView
+            android:id="@+id/tvYear_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorVeryDarkGray1"
+            android:padding="7dp"
+            android:text="@string/Year"
+            android:textColor="@color/colorWhiteGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMovieYear_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvYear_movieAct"
+            android:padding="7dp"
+            android:text="2019"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvReleased_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorVeryDarkGray1"
+            android:padding="7dp"
+            android:text="@string/Released"
+            android:textColor="@color/colorWhiteGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMovieReleased_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvReleased_movieAct"
+            android:padding="7dp"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvRuntime_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorVeryDarkGray1"
+            android:padding="7dp"
+            android:text="@string/Runtime"
+            android:textColor="@color/colorWhiteGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMovieRuntime_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvRuntime_movieAct"
+            android:padding="7dp"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvGenre_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorVeryDarkGray1"
+            android:padding="7dp"
+            android:text="@string/Genre"
+            android:textColor="@color/colorWhiteGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMovieGenre_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvGenre_movieAct"
+            android:padding="7dp"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvCountry_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorVeryDarkGray1"
+            android:padding="7dp"
+            android:text="@string/Country"
+            android:textColor="@color/colorWhiteGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMovieCountry_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvCountry_movieAct"
+            android:padding="7dp"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvAwards_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorVeryDarkGray1"
+            android:padding="7dp"
+            android:text="@string/Awards"
+            android:textColor="@color/colorWhiteGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMovieAwards_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvAwards_movieAct"
+            android:padding="7dp"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvLanguage_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorVeryDarkGray1"
+            android:padding="7dp"
+            android:text="@string/Language"
+            android:textColor="@color/colorWhiteGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMovieLanguage_movieAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvLanguage_movieAct"
+            android:padding="7dp"
+            android:textColor="@color/colorWhitePure"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/ChangeTextColor"
+        android:textColor="@color/colorWhitePure"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        >
+        <Button
+            android:id="@+id/btnColour1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhitePure"
+            android:onClick="setTextColourWhite"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorViolet1"
+            android:layout_toEndOf="@id/btnColour1"
+            android:layout_marginStart="30dp"
+            android:onClick="setTextColourPurple"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

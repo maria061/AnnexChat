@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".ChatDialogActivity">
+
+
+    <TextView
+        android:id="@+id/tv_chatDialog_receiverName"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="1.2"
+        android:background="@color/lightGray"
+        android:padding="5dp"
+        android:textColor="@color/colorWhitePure" />
+
+    <ListView
+        android:id="@+id/lv_messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7.8"
+        android:background="@color/colorDarkGrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/lightGray"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/ET_chatDialog_writeMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgBtnSend_chatDialog"
+            android:background="@android:color/transparent"
+            android:hint="@string/sendMessage"
+            android:inputType="text"
+            android:textColor="@color/colorWhitePure"
+            android:textColorHint="@color/colorWhiteGray"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnSend_chatDialog"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/lightGray"
+            android:contentDescription="@string/generalImageDesc"
+            android:src="@drawable/ic_send_white_24dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
